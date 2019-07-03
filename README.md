@@ -5,6 +5,7 @@ To use the plugin:
 - Upload security.json that uses this plugin (actually two plugins) to zookeeper (see detailed plugin configuration below). Please note that config is not editable on the fly, so a node restart is required after every config change.
 com.github.vjgorla.solr.security.PreAuthAuthenticationPlugin
 com.github.vjgorla.solr.security.PreAuthRuleBasedAuthorizationPlugin
+- PreAuthRuleBasedAuthorizationPlugin plugin is based on RuleBasedAuthorizationPlugin, so it supports the same permission semantics.
 
 An example security.json would be:
 
