@@ -1,0 +1,1 @@
+# solr-ldap-plugin
