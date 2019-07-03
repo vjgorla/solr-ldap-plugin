@@ -1,4 +1,4 @@
-# solr-ldap-plugin
+This plugin relies on a reverse proxy (e.g Webseal, Crowd) performing authentication before the request gets to Solr, and then authorises the user using roles fetched from LDAP using the username provided by the reverse proxy.
 
 To use the plugin:
 - Copy the jar file solr-ldap-plugin-0.0.1.jar into \server\solr-webapp\webapp\WEB-INF\lib . This has to be done on all solr nodes.
