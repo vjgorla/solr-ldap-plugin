@@ -15,18 +15,18 @@ import com.google.common.cache.LoadingCache;
 /**
  * A caching wrapper for a real RoleLookupService
  * 
- * @author Vijay Gorla
+ * @author Vijaya Gorla
  */
-public class CachingRoleLookupService implements PreAuthRuleBasedAuthorizationPlugin.RoleLookupService {
+public class CachingRoleLookupService implements LdapRoleBasedAuthorizationPlugin.RoleLookupService {
 
 	private static final Logger log = LoggerFactory.getLogger(CachingRoleLookupService.class);
 	private static final long DEFAULT_ROLE_CACHE_MAX_SIZE = 1000;
 	private static final long DEFAULT_ROLE_CACHE_TTL_MINUTES = 60;
 
-	private final PreAuthRuleBasedAuthorizationPlugin.RoleLookupService target;
+	private final LdapRoleBasedAuthorizationPlugin.RoleLookupService target;
 	private LoadingCache<String, Set<String>> cache;
 
-	public CachingRoleLookupService(PreAuthRuleBasedAuthorizationPlugin.RoleLookupService target) {
+	public CachingRoleLookupService(LdapRoleBasedAuthorizationPlugin.RoleLookupService target) {
 		this.target = target;
 	}
 	
