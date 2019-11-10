@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vjgorla/solr-ldap-plugin.svg?branch=master)](https://travis-ci.org/vjgorla/solr-ldap-plugin)
+
 To use the plugin:
 - Copy the jar file solr-ldap-plugin-0.0.1.jar into \server\solr-webapp\webapp\WEB-INF\lib . This has to be done on all solr nodes.
 - Upload security.json that uses this plugin (actually two plugins) to zookeeper (see detailed plugin configuration below). Please note that config is not editable on the fly, so a node restart is required after every config change.
